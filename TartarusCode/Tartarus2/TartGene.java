@@ -88,7 +88,25 @@ public class TartGene extends GPGene {
                 result = cfg.dozerGrid.sensor(-1, 1);
 
             ( (TartGene)get(result) ).evaluate(cfg, gp, os, out);
-         }
+        } else if(val == Grid.PROG2) {
+            ( (TartGene)get(0) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(1) ).evaluate(cfg, gp, os, out);
+        } else if(val == Grid.PROG3) {
+            ( (TartGene)get(0) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(1) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(2) ).evaluate(cfg, gp, os, out);
+        } else if(val == Grid.PROG4) {
+            ( (TartGene)get(0) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(1) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(2) ).evaluate(cfg, gp, os, out);
+            ( (TartGene)get(3) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(4) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(5) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(6) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(7) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(8) ).evaluate(cfg, gp, os, out);
+//            ( (TartGene)get(9) ).evaluate(cfg, gp, os, out);
+        }
 
 	return 0;
     }

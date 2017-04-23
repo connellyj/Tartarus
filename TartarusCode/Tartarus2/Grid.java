@@ -31,6 +31,9 @@ public class Grid {
     public final static int UL = 8;   
     public final static int ML = 9;   
     public final static int LL = 10;  
+    public final static int PROG2 = 11;
+    public final static int PROG3 = 12;
+    public final static int PROG4 = 13;
     
     // grid private vars
     private char[][] grid;
