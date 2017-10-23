@@ -22,7 +22,11 @@ public class Grid {
     public final static int MAX = 15;  
     public final static int MIN = 16;  
     public final static int ITE = 17;
-
+    public final static int RAND3 = 18;
+    public final static int UUM = 19;
+    public final static int LMM = 20;
+    public final static int RMM = 21;
+    public final static int DDM = 22;
 
     // grid private vars
     private char[][] grid;

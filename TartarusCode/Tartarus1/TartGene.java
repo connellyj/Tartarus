@@ -117,7 +117,23 @@ public class TartGene extends GPGene {
             arg3 = ( (TartGene)get(2) ).evaluate(cfg, gp);
             if (arg1 == 0) return arg3;
             else return arg2;
-
+                
+        case Grid.RAND3:
+            Random r = new Random();
+            return r.nextInt(3);
+                
+        case Grid.UUM:
+            return cfg.dozerGrid.sensor(2, 0);
+                
+        case Grid.DDM:
+            return cfg.dozerGrid.sensor(-2, 0);
+                
+        case Grid.LMM:
+            return cfg.dozerGrid.sensor(0, -2);
+                
+        case Grid.RMM:
+            return cfg.dozerGrid.sensor(0, 2);
+                
         default:
             throw new RuntimeException("Undefined function type "+node.value());
         }
